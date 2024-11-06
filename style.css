@@ -33,19 +33,19 @@ header .logo{
 }
 
 main{
+    width: 100%;
+}
+
+main .container{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    min-width: 320px;
+    width: 90%;
+    min-width: 288px;
     height: 100vh;
-    
+    margin: 0 auto;
 }
 
-main .home{
-    width: 90%;
-    min-width: 320px;
-}
 
 main .logo-home{
     background-image: url('./icons/logo.png');
@@ -72,7 +72,6 @@ main p{
     color: white;
     text-align: center;
     line-height: 25px;
-    margin-bottom: 25px;
 }
 
 main button{
@@ -86,8 +85,10 @@ main button{
     font-weight: bold;
     border-radius: 15px;
     margin: 0 auto;
+    margin-top: 25px;
     padding: 10px;
-    & .flecha-btn-continuar{
+    text-align: center;
+    & .btn-fecha{
         width: 22px;
         height: 22px;
         margin-left: 20px;
@@ -102,5 +103,33 @@ main button:hover{
     background-color: white;
     color: var(--bg);
     box-shadow: 1px 1px 10px var(--verde);
+}
+
+.container h2{
+text-align: center;
+color: white;
+}
+
+.p{
+    color: var(--verde);
+    width: 270px;
+}
+
+.container form{
+    display: flex;
+    justify-content: center;
+}
+
+.input{
+    border: none;
+    border-bottom: 2px solid var(--verde);
+    height: 30px;
+    background-color: transparent;
+    outline: none;
+    caret-color: var(--verde);
+    color: white;
+    &.input-nombre::placeholder{
+        text-align: center;
+    }
 }
 
